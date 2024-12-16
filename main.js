@@ -15,11 +15,11 @@ function validar(numero){
         const mensagemB = 'O valor do campo B é maior que o valor do campo A'
         const mensagemIguais = 'Os valor dos campor são Iguais'
 
-        if (valorB.value > valorA.value){
+        if (valorB.valueAsNumber > valorA.valueAsNumber){
             mensagemResposta.innerHTML= mensagemB;
             mensagemResposta.style.display = "block";
         }
-        else if (valorB.value == valorA.value){
+        else if (valorB.valueAsNumber == valorA.valueAsNumber){
             mensagemResposta.innerHTML= mensagemIguais;
             mensagemResposta.style.display = "block";
         }
